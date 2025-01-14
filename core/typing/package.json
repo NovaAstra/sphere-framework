@@ -1,0 +1,7 @@
+{
+  "name": "@sphere/typing",
+  "version": "0.0.0",
+  "devDependencies": {
+    "typescript": "~5.7.3"
+  }
+}

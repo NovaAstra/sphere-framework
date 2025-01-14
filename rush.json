@@ -7,7 +7,9 @@
   "projectFolderMaxDepth": 3,
   "ensureConsistentVersions": true,
   "allowedProjectTags": [
-    "eslint"
+    "eslint",
+    "typescript",
+    "ui"
   ],
   "projects": [
     {
@@ -15,6 +17,27 @@
       "projectFolder": "configs/eslint/eslint-config",
       "tags": [
         "eslint"
+      ]
+    },
+    {
+      "packageName": "@sphere/typing",
+      "projectFolder": "core/typing",
+      "tags": [
+        "typescript"
+      ]
+    },
+    {
+      "packageName": "@sphere/tsconfig",
+      "projectFolder": "configs/tsconfig",
+      "tags": [
+        "typescript"
+      ]
+    },
+    {
+      "packageName": "@sphere/element",
+      "projectFolder": "ui/element",
+      "tags": [
+        "ui"
       ]
     }
   ]
