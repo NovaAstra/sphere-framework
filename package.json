@@ -1,5 +1,14 @@
 {
-  "name": "sphere",
+  "name": "sphere-framework",
+  "private": true,
   "version": "0.0.0",
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "build": "echo NOTE: use 'rush build' instead",
+    "clean": "echo NOTE: use 'rush clean' instead",
+    "docs": "echo NOTE: use 'rush docs' instead",
+    "lint": "echo NOTE: use 'rush lint' instead",
+    "test": "echo NOTE: use 'rush test' instead",
+    "preinstall": "echo ERROR: use 'rush install' instead && exit 1"
+  }
 }

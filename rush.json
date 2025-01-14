@@ -3,5 +3,19 @@
   "rushVersion": "5.148.0",
   "pnpmVersion": "9.15.4",
   "nodeSupportedVersionRange": ">=22.11.0",
-  "projects": []
+  "projectFolderMinDepth": 2,
+  "projectFolderMaxDepth": 3,
+  "ensureConsistentVersions": true,
+  "allowedProjectTags": [
+    "eslint"
+  ],
+  "projects": [
+    {
+      "packageName": "@sphere/eslint-config",
+      "projectFolder": "configs/eslint/eslint-config",
+      "tags": [
+        "eslint"
+      ]
+    }
+  ]
 }
