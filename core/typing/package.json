@@ -1,7 +1,12 @@
 {
   "name": "@sphere/typing",
   "version": "0.0.0",
+  "type": "module",
   "devDependencies": {
+    "@sphere/tsconfig": "workspace:*",
     "typescript": "~5.7.3"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.7.3"
   }
 }

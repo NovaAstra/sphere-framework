@@ -1,15 +1,16 @@
 {
   "typescript.tsdk": "common/temp/node_modules/typescript/lib",
+  "eslint.enable": true,
   "eslint.useFlatConfig": true,
-  "eslint.options": {
-    "flags": [
-      "unstable_ts_config"
-    ]
-  },
   "eslint.validate": [
     "javascript",
     "typescript",
     "yaml",
+  ],
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
   ],
   "window.zoomLevel": 2,
   "terminal.integrated.profiles.windows": {

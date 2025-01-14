@@ -2,11 +2,11 @@
   "name": "@sphere/tsconfig",
   "version": "0.0.0",
   "type": "module",
-  "publishConfig": {
-		"access": "public"
-	},
   "tsconfig": "tsconfig.json",
   "main": "tsconfig.json",
+  "devDependencies": {
+    "typescript": "~5.7.3"
+  },
   "peerDependencies": {
     "typescript": ">=5.7.3"
   }
