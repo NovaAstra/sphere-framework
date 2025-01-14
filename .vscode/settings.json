@@ -1,0 +1,27 @@
+{
+  "typescript.tsdk": "common/temp/node_modules/typescript/lib",
+  "eslint.useFlatConfig": true,
+  "eslint.options": {
+    "flags": [
+      "unstable_ts_config"
+    ]
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "yaml",
+  ],
+  "window.zoomLevel": 2,
+  "terminal.integrated.profiles.windows": {
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "icon": "terminal-cmd"
+    },
+    "PowerShell 7": {
+      "path": "D:\\PowerShell\\7\\pwsh.exe"
+    }
+  }
+}
