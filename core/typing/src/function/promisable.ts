@@ -1,0 +1,1 @@
+export type Promisable<T = any> = T | PromiseLike<T>;
