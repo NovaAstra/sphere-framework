@@ -4,10 +4,8 @@ export type Promisable<T> = T | Promise<T>;
 
 export type Arrayable<T> = T | T[];
 
-export function createConfig<T>(
-  config: T
-): T extends void ? () => Promisable<any> : (options?: T) => Promisable<any> {
-  return
+export function createConfig(config) {
+  return typeof config === 'function'
+    ? config
+    : (() => config);
 }
-
-createConfig({})
