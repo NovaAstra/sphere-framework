@@ -11,6 +11,10 @@ importers:
   .: {}
 
   ../../configs/eslint/eslint-config:
+    dependencies:
+      '@sphere/shared':
+        specifier: workspace:*
+        version: link:../../../core/shared
     devDependencies:
       '@sphere/tsconfig':
         specifier: workspace:*
@@ -21,6 +25,12 @@ importers:
       eslint:
         specifier: ~9.18.0
         version: 9.18.0(jiti@2.4.2)
+      eslint-flat-config-utils:
+        specifier: ~1.0.0
+        version: 1.0.0
+      eslint-plugin-array-func:
+        specifier: ~5.0.2
+        version: 5.0.2(eslint@9.18.0(jiti@2.4.2))
       jiti:
         specifier: ~2.4.2
         version: 2.4.2
@@ -30,6 +40,18 @@ importers:
 
   ../../configs/tsconfig:
     devDependencies:
+      typescript:
+        specifier: ~5.7.3
+        version: 5.7.3
+
+  ../../core/shared:
+    devDependencies:
+      '@sphere/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
+      '@sphere/typing':
+        specifier: workspace:*
+        version: link:../typing
       typescript:
         specifier: ~5.7.3
         version: 5.7.3
@@ -189,6 +211,15 @@ packages:
   escape-string-regexp@4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
+
+  eslint-flat-config-utils@1.0.0:
+    resolution: {integrity: sha512-tmzcXeCsa24/u3glyw1Mo7KfC/r9a5Vsu1nPCkX7uefD7C5Z4x922Q2KP/drhTLbOI5lcFHYpfXjKhqqnUWObw==}
+
+  eslint-plugin-array-func@5.0.2:
+    resolution: {integrity: sha512-iyLex2+pTcxHZ6OLL80oMy+CtffpJ9j6A/57VQi1VN5bK1IS/0o+mWvezDHeAlwXjn6ksRO9L5SGU329BBuY8A==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: '>=8.51.0'
 
   eslint-scope@8.2.0:
     resolution: {integrity: sha512-PHlWUfG6lvPc3yvP5A4PNyBL1W8fkDUccmI21JUu/+GKZBoH/W5u6usENXUrWFRsyoW5ACUjFGgAFQp5gUlb/A==}
@@ -354,6 +385,9 @@ packages:
   path-key@3.1.1:
     resolution: {integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==}
     engines: {node: '>=8'}
+
+  pathe@2.0.2:
+    resolution: {integrity: sha512-15Ztpk+nov8DR524R4BF7uEuzESgzUEAV4Ah7CUMNGXdE5ELuvxElxGXndBl32vMSsWa1jpNf22Z+Er3sKwq+w==}
 
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
@@ -523,6 +557,14 @@ snapshots:
   deep-is@0.1.4: {}
 
   escape-string-regexp@4.0.0: {}
+
+  eslint-flat-config-utils@1.0.0:
+    dependencies:
+      pathe: 2.0.2
+
+  eslint-plugin-array-func@5.0.2(eslint@9.18.0(jiti@2.4.2)):
+    dependencies:
+      eslint: 9.18.0(jiti@2.4.2)
 
   eslint-scope@8.2.0:
     dependencies:
@@ -698,6 +740,8 @@ snapshots:
   path-exists@4.0.0: {}
 
   path-key@3.1.1: {}
+
+  pathe@2.0.2: {}
 
   prelude-ls@1.2.1: {}
 

@@ -39,6 +39,10 @@
       "tags": [
         "ui"
       ]
+    },
+    {
+      "packageName": "@sphere/shared",
+      "projectFolder": "core/shared"
     }
   ]
 }

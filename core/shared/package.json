@@ -1,0 +1,14 @@
+{
+  "name": "@sphere/shared",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@sphere/typing": "workspace:*",
+    "@sphere/tsconfig": "workspace:*",
+    "typescript": "~5.7.3"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.7.3"
+  }
+}

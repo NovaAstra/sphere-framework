@@ -6,12 +6,17 @@
   "scripts": {
     "lint": "eslint \"./src/**/*.ts\" 1>&2"
   },
+  "dependencies": {
+    "@sphere/shared": "workspace:*"
+  },
   "devDependencies": {
     "@sphere/typing": "workspace:*",
     "@sphere/tsconfig": "workspace:*",
     "typescript": "~5.7.3",
     "eslint": "~9.18.0",
-    "jiti": "~2.4.2"
+    "jiti": "~2.4.2",
+    "eslint-plugin-array-func": "~5.0.2",
+    "eslint-flat-config-utils": "~1.0.0"
   },
   "peerDependencies": {
     "eslint": ">=9.18.0"
