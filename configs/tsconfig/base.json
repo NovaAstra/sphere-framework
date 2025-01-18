@@ -3,7 +3,23 @@
   "compileOnSave": false,
   "compilerOptions": {
     "target": "esnext",
+
     "module": "esnext",
-    "moduleResolution": "bundler"
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "useDefineForClassFields": true,
+
+    "noEmit": true,
+
+    "esModuleInterop": true,
+    "isolatedModules": true,
+
+    "skipLibCheck": true,
+
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
   }
 }
