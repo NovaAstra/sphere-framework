@@ -13,5 +13,6 @@ export const arrayFunc = createConfig({
     'array-func/avoid-reverse': 'error',
     'array-func/prefer-flat-map': 'off',
     'array-func/prefer-flat': 'off',
-  }
+  },
+  files:['**/*.js']
 }) 

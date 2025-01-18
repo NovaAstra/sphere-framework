@@ -1,5 +1,5 @@
-import type { Arrayable, Promisable } from "@sphere/typing"
-import type { ESLintConfig } from "./typings"
+import type { Arrayable, Promisable } from "@sphere/typing";
+import type { ESLintConfig } from "./typings";
 
 export type CreateConfigFunction<O = void, E extends ESLintConfig = ESLintConfig> =
   O extends void
