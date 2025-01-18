@@ -27,8 +27,7 @@ export function createConfig<
   O = void,
   E extends ESLintConfig = ESLintConfig
 >(
-  config: Arrayable<E>
-    | CreateConfigFunction<O, E>
+  config: Arrayable<E> | CreateConfigFunction<O, E>
 ): CreateConfigFunction<O, E> {
   return typeof config === 'function'
     ? config
