@@ -8,9 +8,7 @@
   },
   "dependencies": {
     "@sphere/shared": "workspace:*",
-    "@typescript-eslint/parser": "~8.20.0",
-    "eslint-plugin-array-func": "~5.0.2",
-    "@typescript-eslint/eslint-plugin": "~8.20.0"
+    "eslint-plugin-array-func": "~5.0.2"
   },
   "devDependencies": {
     "@sphere/typing": "workspace:*",
