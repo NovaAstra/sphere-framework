@@ -7,8 +7,15 @@ export interface ImportsOptions {
   stylistic?: boolean;
 }
 
-export const imports = createConfig((options: ImportsOptions = {}) => {
+export const imports = createConfig(() => {
   const configs: ESLintConfig[] = []
+
+  configs.push({
+    name: "@sphere/imports/rules",
+    plugins: {
+      "import": PluginImports
+    }
+  })
 
   return configs
 })
