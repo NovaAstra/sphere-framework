@@ -12,10 +12,22 @@ importers:
 
   ../../configs/eslint/eslint-config:
     dependencies:
+      '@sphere/shared':
+        specifier: workspace:*
+        version: link:../../../core/shared
+      eslint-define-config:
+        specifier: ~2.1.0
+        version: 2.1.0
       globals:
         specifier: ~15.14.0
         version: 15.14.0
     devDependencies:
+      '@sphere/tsconfig':
+        specifier: workspace:*
+        version: link:../../tsconfig
+      '@sphere/typing':
+        specifier: workspace:*
+        version: link:../../../core/typing
       '@types/node':
         specifier: ~22.10.7
         version: 22.10.7
@@ -220,6 +232,10 @@ packages:
   escape-string-regexp@4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
+
+  eslint-define-config@2.1.0:
+    resolution: {integrity: sha512-QUp6pM9pjKEVannNAbSJNeRuYwW3LshejfyBBpjeMGaJjaDUpVps4C6KVR8R7dWZnD3i0synmrE36znjTkJvdQ==}
+    engines: {node: '>=18.0.0', npm: '>=9.0.0', pnpm: '>=8.6.0'}
 
   eslint-scope@8.2.0:
     resolution: {integrity: sha512-PHlWUfG6lvPc3yvP5A4PNyBL1W8fkDUccmI21JUu/+GKZBoH/W5u6usENXUrWFRsyoW5ACUjFGgAFQp5gUlb/A==}
@@ -565,6 +581,8 @@ snapshots:
   deep-is@0.1.4: {}
 
   escape-string-regexp@4.0.0: {}
+
+  eslint-define-config@2.1.0: {}
 
   eslint-scope@8.2.0:
     dependencies:

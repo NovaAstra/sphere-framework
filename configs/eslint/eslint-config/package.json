@@ -7,9 +7,13 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "globals": "~15.14.0"
+    "@sphere/shared": "workspace:*",
+    "globals": "~15.14.0",
+    "eslint-define-config": "~2.1.0"
   },
   "devDependencies": {
+    "@sphere/tsconfig": "workspace:*",
+    "@sphere/typing": "workspace:*",
     "typescript": "~5.7.3",
     "@types/node": "~22.10.7",
     "eslint": "~9.18.0",
