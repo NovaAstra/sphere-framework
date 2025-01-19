@@ -20,6 +20,13 @@
       ]
     },
     {
+      "packageName": "@sphere/eslint-plugin-gitignore",
+      "projectFolder": "configs/eslint/eslint-plugin-gitignore",
+      "tags": [
+        "eslint"
+      ]
+    },
+    {
       "packageName": "@sphere/typing",
       "projectFolder": "core/typing",
       "tags": [

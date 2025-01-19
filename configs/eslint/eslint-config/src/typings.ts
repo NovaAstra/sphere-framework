@@ -1,8 +1,3 @@
-import type { Linter,ESLint } from 'eslint';
+import type { FlatESLintConfig } from 'eslint-define-config'
 
-export type ESLintPlugin = ESLint.Plugin
-
-export type ESLintConfig = Omit<Linter.Config<Linter.RulesRecord>, 'plugins'> & {
-  name?: string;
-  plugins?: Record<string, ESLintPlugin>;
-}
+export type ESLintConfig = FlatESLintConfig

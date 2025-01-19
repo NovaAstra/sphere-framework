@@ -1,7 +1,6 @@
-import type { ESLintPlugin } from "./typings"
 import type { Promisable } from "@sphere/typing";
 
-export async function interopDefault<T = ESLintPlugin>(module: Promisable<any>): Promise<T> {
+export async function interopDefault<T>(module: Promisable<T>): Promise<T> {
   try {
     let resolved = await module
 
