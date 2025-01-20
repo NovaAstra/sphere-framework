@@ -25,9 +25,9 @@ export const comments = createConfig((options: CommentsOptions = {}) => {
     }
   ]
 
-  const { stylistic = true } = options
+  const { stylistic: enableStylistic = true } = options
 
-  if (stylistic) {
+  if (enableStylistic) {
     configs.push({
       name: "@sphere/eslint-comments/rules/stylistic",
       rules: {
