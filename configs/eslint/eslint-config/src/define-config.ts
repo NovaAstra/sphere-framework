@@ -2,7 +2,7 @@ import type { Arrayable } from "@sphere/typing"
 import type { ESLintConfig } from "./typings"
 
 import { toArray } from "@sphere/shared"
-import { unicorn, comments, promise, imports } from "./configs"
+import { regexp } from "./configs"
 
 export interface ESLintOptions {
 
@@ -14,10 +14,7 @@ export async function defineConfig(
   const configs: ESLintConfig[] = []
 
   configs.push(
-    ...unicorn(),
-    ...comments(),
-    ...imports(),
-    promise()
+    ...regexp()
   )
 
   if (Object.keys(config).length > 0)
