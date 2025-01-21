@@ -1,4 +1,4 @@
-declare module 'eslint-plugin-jsonc' {
+declare module 'eslint-plugin-markdown' {
   const plugin: import('eslint').ESLint.Plugin
   export default plugin;
 }
