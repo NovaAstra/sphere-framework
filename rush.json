@@ -8,6 +8,7 @@
   "ensureConsistentVersions": true,
   "allowedProjectTags": [
     "eslint",
+    "prettier",
     "typescript",
     "ui"
   ],
@@ -24,6 +25,13 @@
       "projectFolder": "configs/eslint/eslint-plugin-gitignore",
       "tags": [
         "eslint"
+      ]
+    },
+    {
+      "packageName": "@sphere/prettier-config",
+      "projectFolder": "configs/prettier-config",
+      "tags": [
+        "prettier"
       ]
     },
     {
