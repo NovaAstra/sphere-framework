@@ -101,19 +101,7 @@ importers:
         specifier: ~5.7.3
         version: 5.7.3
 
-  ../../configs/prettier/prettier-config: {}
-
-  ../../configs/prettier/pretty:
-    devDependencies:
-      '@sphere/tsconfig':
-        specifier: workspace:*
-        version: link:../../tsconfig
-      '@types/node':
-        specifier: ~22.10.7
-        version: 22.10.7
-      typescript:
-        specifier: ~5.7.3
-        version: 5.7.3
+  ../../configs/prettier-config: {}
 
   ../../configs/tsconfig:
     devDependencies:

@@ -1,0 +1,11 @@
+{
+  "name": "@sphere/dashboard",
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {},
+  "devDependencies": {
+    "@sphere/typing": "workspace:*",
+    "@sphere/tsconfig": "workspace:*",
+    "typescript": "~5.7.3"
+  }
+}
