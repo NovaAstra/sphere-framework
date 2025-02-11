@@ -63,6 +63,14 @@
     {
       "packageName": "@sphere/widget",
       "projectFolder": "apps/widget"
+    },
+    {
+      "packageName": "@sphere/dashboard",
+      "projectFolder": "apps/dashboard"
+    },
+    {
+      "packageName": "@sphere/chat",
+      "projectFolder": "apps/chat"
     }
   ]
 }

@@ -10,6 +10,30 @@ importers:
 
   .: {}
 
+  ../../apps/chat:
+    devDependencies:
+      '@sphere/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
+      '@sphere/typing':
+        specifier: workspace:*
+        version: link:../../core/typing
+      typescript:
+        specifier: ~5.7.3
+        version: 5.7.3
+
+  ../../apps/dashboard:
+    devDependencies:
+      '@sphere/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
+      '@sphere/typing':
+        specifier: workspace:*
+        version: link:../../core/typing
+      typescript:
+        specifier: ~5.7.3
+        version: 5.7.3
+
   ../../apps/widget:
     devDependencies:
       '@sphere/tsconfig':
@@ -725,8 +749,8 @@ packages:
   flatted@3.3.2:
     resolution: {integrity: sha512-AiwGJM8YcNOaobumgtng+6NHuOqC3A7MixFeDafM3X9cIUM+xUXoS5Vfgf+OihAYe20fxqNM9yPBXJzRtZ/4eA==}
 
-  for-each@0.3.4:
-    resolution: {integrity: sha512-kKaIINnFpzW6ffJNDjjyjrk21BkDx38c0xa/klsT8VzLCaMEefv4ZTacrcVR4DmgTeBra++jMDAfS/tS799YDw==}
+  for-each@0.3.5:
+    resolution: {integrity: sha512-dKx12eRCVIzqCxFGplyFKJMPvLEWgmNtUrpTiJIR5u97zEhRG8ySrtboPHZXx7daLxQVrl643cTzbab2tkQjxg==}
     engines: {node: '>= 0.4'}
 
   function-bind@1.1.2:
@@ -2200,7 +2224,7 @@ snapshots:
 
   flatted@3.3.2: {}
 
-  for-each@0.3.4:
+  for-each@0.3.5:
     dependencies:
       is-callable: 1.2.7
 
@@ -2914,7 +2938,7 @@ snapshots:
   typed-array-byte-length@1.0.3:
     dependencies:
       call-bind: 1.0.8
-      for-each: 0.3.4
+      for-each: 0.3.5
       gopd: 1.2.0
       has-proto: 1.2.0
       is-typed-array: 1.1.15
@@ -2923,7 +2947,7 @@ snapshots:
     dependencies:
       available-typed-arrays: 1.0.7
       call-bind: 1.0.8
-      for-each: 0.3.4
+      for-each: 0.3.5
       gopd: 1.2.0
       has-proto: 1.2.0
       is-typed-array: 1.1.15
@@ -2932,7 +2956,7 @@ snapshots:
   typed-array-length@1.0.7:
     dependencies:
       call-bind: 1.0.8
-      for-each: 0.3.4
+      for-each: 0.3.5
       gopd: 1.2.0
       is-typed-array: 1.1.15
       possible-typed-array-names: 1.1.0
@@ -3019,7 +3043,7 @@ snapshots:
       available-typed-arrays: 1.0.7
       call-bind: 1.0.8
       call-bound: 1.0.3
-      for-each: 0.3.4
+      for-each: 0.3.5
       gopd: 1.2.0
       has-tostringtag: 1.0.2
 
