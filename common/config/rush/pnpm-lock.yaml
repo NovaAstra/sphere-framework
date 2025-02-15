@@ -187,6 +187,27 @@ importers:
         specifier: ~5.7.3
         version: 5.7.3
 
+  ../../ui/graphix:
+    devDependencies:
+      '@sphere/eslint-config':
+        specifier: workspace:*
+        version: link:../../configs/eslint/eslint-config
+      '@sphere/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
+      '@sphere/typing':
+        specifier: workspace:*
+        version: link:../../core/typing
+      eslint:
+        specifier: ~9.18.0
+        version: 9.18.0(jiti@2.4.2)
+      jiti:
+        specifier: ~2.4.2
+        version: 2.4.2
+      typescript:
+        specifier: ~5.7.3
+        version: 5.7.3
+
 packages:
 
   '@babel/code-frame@7.26.2':

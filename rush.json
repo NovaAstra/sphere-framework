@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
-  "rushVersion": "5.148.0",
-  "pnpmVersion": "10.3.0",
+  "rushVersion": "5.149.0",
+  "pnpmVersion": "10.4.0",
   "nodeSupportedVersionRange": ">=22.11.0",
   "projectFolderMinDepth": 2,
   "projectFolderMaxDepth": 3,
@@ -52,6 +52,13 @@
     {
       "packageName": "@sphere/element",
       "projectFolder": "ui/element",
+      "tags": [
+        "ui"
+      ]
+    },
+    {
+      "packageName": "@sphere/graphix",
+      "projectFolder": "ui/graphix",
       "tags": [
         "ui"
       ]
