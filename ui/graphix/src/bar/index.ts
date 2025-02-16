@@ -4,7 +4,7 @@ import type { ChartSchema, G2PlotDrawOptions } from "../core"
 import { G2PlotChartView } from "../core"
 
 export class Bar extends G2PlotChartView<ColumnOptions, Column> {
-  public async render(drawOptions: G2PlotDrawOptions): Promise<Column> {
+  public async drawChart(drawOptions: G2PlotDrawOptions): Promise<Column> {
     const { container } = drawOptions
 
     const initOptions: ColumnOptions = {}
