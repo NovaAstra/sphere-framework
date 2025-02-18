@@ -74,6 +74,10 @@
     {
       "packageName": "@sphere/dashboard",
       "projectFolder": "apps/dashboard"
+    },
+    {
+      "packageName": "@sphere/demo",
+      "projectFolder": "apps/demo"
     }
   ]
 }
