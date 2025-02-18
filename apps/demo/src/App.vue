@@ -4,7 +4,7 @@ import { Bar } from "@sphere/graphix/src/vue"
 
 <template>
   <div>
-    <Bar />
+    <Bar class="asdsa"/>
     <Bar />
     <Bar />
   </div>
