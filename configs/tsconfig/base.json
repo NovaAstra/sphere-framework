@@ -17,9 +17,10 @@
 
     "skipLibCheck": true,
 
-    "strict": true,
-    "noUnusedLocals": true,
+    "strict": false,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
   }
 }

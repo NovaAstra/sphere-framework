@@ -8,7 +8,7 @@ export type Spec = (Mark | Composition | AxisComponent | Omit<LegendComponent, '
 };
 
 export type Options = Spec & {
-
+  children?: Array<Options & { type: unknown }>
 }
 
 export type Adaptor<O = Options> = {
