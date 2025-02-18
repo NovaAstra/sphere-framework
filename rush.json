@@ -74,10 +74,6 @@
     {
       "packageName": "@sphere/dashboard",
       "projectFolder": "apps/dashboard"
-    },
-    {
-      "packageName": "@sphere/chat",
-      "projectFolder": "apps/chat"
     }
   ]
 }
